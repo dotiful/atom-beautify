@@ -404,7 +404,8 @@
     "nginx beautify",
     "golang template",
     "align-yaml",
-    "goimports"
+    "goimports",
+    "shfmt"
   ],
   "devDependencies": {
     "coffeelint": "1.16.0"

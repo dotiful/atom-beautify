@@ -368,6 +368,23 @@ Options for SassConvert executable.
 2. Go into *Packages* and search for "*Atom Beautify*" package.
 3. Find the option "*SassConvert*" and change it to your desired configuration.
 
+#####  [shfmt](#shfmt) 
+
+**Important**: This option is only configurable from within Atom Beautify's setting panel.
+
+**Type**: `object`
+
+**Description**:
+
+Options for shfmt executable.
+
+**How to Configure**
+
+1. You can open the [Settings View](https://github.com/atom/settings-view) by navigating to
+*Edit > Preferences (Linux)*, *Atom > Preferences (OS X)*, or *File > Preferences (Windows)*.
+2. Go into *Packages* and search for "*Atom Beautify*" package.
+3. Find the option "*shfmt*" and change it to your desired configuration.
+
 #####  [Uncrustify](#uncrustify) 
 
 **Important**: This option is only configurable from within Atom Beautify's setting panel.
@@ -582,14 +599,14 @@ Path to uncrustify config file. i.e. uncrustify.cfg (Supported by Uncrustify)
 
 ####  [Bash](#bash) 
 
-**Supported Beautifiers**:  [`beautysh`](#beautysh) 
+**Supported Beautifiers**:  [`beautysh`](#beautysh)  [`shfmt`](#shfmt) 
 
-| Option | beautysh |
-| --- | --- |
-| `disabled` | :white_check_mark: |
-| `default_beautifier` | :white_check_mark: |
-| `beautify_on_save` | :white_check_mark: |
-| `indent_size` | :white_check_mark: |
+| Option | beautysh | shfmt |
+| --- | --- | --- |
+| `disabled` | :white_check_mark: | :white_check_mark: |
+| `default_beautifier` | :white_check_mark: | :white_check_mark: |
+| `beautify_on_save` | :white_check_mark: | :white_check_mark: |
+| `indent_size` | :white_check_mark: | :white_check_mark: |
 
 **Description**:
 
@@ -620,7 +637,7 @@ Disable Bash Beautification
 
 **Type**: `string`
 
-**Enum**:  `beautysh` 
+**Enum**:  `beautysh`  `shfmt` 
 
 **Description**:
 
@@ -660,11 +677,11 @@ Automatically beautify Bash files on save
 
 **Type**: `integer`
 
-**Supported Beautifiers**:  [`beautysh`](#beautysh) 
+**Supported Beautifiers**:  [`beautysh`](#beautysh)  [`shfmt`](#shfmt) 
 
 **Description**:
 
-Indentation size/length (Supported by beautysh)
+Indentation size/length (Supported by beautysh, shfmt)
 
 **Example `.jsbeautifyrc` Configuration**
 
@@ -20101,11 +20118,11 @@ defines how from imports wrap (requires isort installed) (Supported by autopep8,
 
 **Type**: `integer`
 
-**Supported Beautifiers**:  [`beautysh`](#beautysh) 
+**Supported Beautifiers**:  [`beautysh`](#beautysh)  [`shfmt`](#shfmt) 
 
 **Description**:
 
-Indentation size/length (Supported by beautysh)
+Indentation size/length (Supported by beautysh, shfmt)
 
 **Example `.jsbeautifyrc` Configuration**
 
@@ -20464,6 +20481,35 @@ Path to rustfmt program (Supported by rustfmt)
 {
     "rust": {
         "rustfmt_path": ""
+    }
+}
+```
+
+
+### shfmt
+
+#####  [Indent size](#indent-size) 
+
+**Namespace**: `bash`
+
+**Key**: `indent_size`
+
+**Default**: `4`
+
+**Type**: `integer`
+
+**Supported Beautifiers**:  [`beautysh`](#beautysh)  [`shfmt`](#shfmt) 
+
+**Description**:
+
+Indentation size/length (Supported by beautysh, shfmt)
+
+**Example `.jsbeautifyrc` Configuration**
+
+```json
+{
+    "bash": {
+        "indent_size": 4
     }
 }
 ```

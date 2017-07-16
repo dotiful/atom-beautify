@@ -2,13 +2,14 @@ module.exports = {
 
   name: "Bash"
   namespace: "bash"
-  scope: ['source.sh', 'source.bash']
+  scope: ['source.sh', 'source.bash', 'source.zsh']
 
   ###
   Supported Grammars
   ###
   grammars: [
     "Shell Script"
+    "Unix Shell"
   ]
 
   defaultBeautifier: "beautysh"

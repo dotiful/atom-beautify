@@ -109,6 +109,7 @@ Some of the supported beautifiers are developed for Node.js and are automaticall
 | Ruby Beautify | :warning: Manual installation | :construction: Not an executable | :page_facing_up: Go to https://github.com/erniebrodeur/ruby-beautify and follow the instructions. |
 | rustfmt | :warning: Manual installation | :construction: Not an executable | :page_facing_up: Go to https://github.com/nrc/rustfmt and follow the instructions. |
 | SassConvert | :warning: 1 executable | :white_check_mark: :100:% of executables | :whale: With [Docker](https://www.docker.com/):<br/>1. Install [SassConvert (`sass-convert`)](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax) with `docker pull unibeautify/sass-convert`<br/><br/>:bookmark_tabs: Manually:<br/>1. Install [SassConvert (`sass-convert`)](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax) by following http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax<br/> |
+| shfmt | :warning: 1 executable | :x: No Docker support | :bookmark_tabs: Manually:<br/>1. Install [shfmt (`shfmt`)](https://github.com/shfmt/sh) by following https://github.com/shfmt/sh/#shfmt<br/> |
 | sqlformat | :warning: Manual installation | :construction: Not an executable | :page_facing_up: Go to https://github.com/andialbrecht/sqlparse and follow the instructions. |
 | stylish-haskell | :warning: Manual installation | :construction: Not an executable | :page_facing_up: Go to https://github.com/jaspervdj/stylish-haskell and follow the instructions. |
 | Tidy Markdown | :white_check_mark: | :ok_hand: Not necessary | :smiley: Nothing! |
@@ -125,7 +126,7 @@ See [all supported options in the documentation at  `docs/options.md`](docs/opti
 | --- | --- | --- | ---- |
 | Apex | `Apex` |`.cls`, `.trigger` | **[`Uncrustify`](https://github.com/uncrustify/uncrustify)** |
 | Arduino | `Arduino` |`.ino`, `.pde` | **[`Uncrustify`](https://github.com/uncrustify/uncrustify)** |
-| Bash | `Shell Script` |`.bash`, `.sh` | **[`beautysh`](https://github.com/bemeurer/beautysh)** |
+| Bash | `Shell Script`, `Unix Shell` |`.bash`, `.sh` | **[`beautysh`](https://github.com/bemeurer/beautysh)**, [`shfmt`](https://github.com/shfmt/sh) |
 | C | `C`, `opencl` |`.h`, `.c`, `.cl` | **[`Uncrustify`](https://github.com/uncrustify/uncrustify)**, [`clang-format`](https://clang.llvm.org/docs/ClangFormat.html) |
 | Coldfusion | `html` |`.cfm`, `.cfml`, `.cfc` | **[`Pretty Diff`](https://github.com/prettydiff/prettydiff)** |
 | Clojure | `Clojure` |`.clj`, `.cljs`, `.edn` | **[`cljfmt`](https://github.com/snoe/node-cljfmt)** |
